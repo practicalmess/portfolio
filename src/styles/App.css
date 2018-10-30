@@ -1,0 +1,28 @@
+.App {
+  padding: 10px;
+}
+.App-section {
+  border: 1px solid black;
+  width: 80%;
+  margin: 5% 10%;
+  position: fixed;
+  -webkit-transition: top 0.5s;
+  transition: top 0.5s;
+}
+.App-nav--wrapper {
+  list-style-type: none;
+  float: right;
+}
+.App-nav--wrapper li {
+  display: inline;
+  padding: 0.5em;
+  border: 1px solid black;
+  cursor: pointer;
+  margin: 5px;
+}
+
+img {
+  width: 100px;
+}
+
+/*# sourceMappingURL=App.css.map */

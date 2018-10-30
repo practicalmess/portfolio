@@ -1,0 +1,31 @@
+.App {
+  padding: 10px;
+  &-section {
+    border: 1px solid black;
+    width: 80%;
+    margin: 5% 10%;
+    position: fixed;
+    -webkit-transition: top .5s;
+    transition: top .5s;
+  }
+  &-nav--wrapper {
+    list-style-type: none;
+    float: right;
+    padding: 0;
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+    li {
+      display: inline;
+      padding: .5em;
+      border: 1px solid black;
+      cursor: pointer;
+      margin: 5px;
+    }
+  }
+}
+
+img {
+  width: 100px;
+}
+

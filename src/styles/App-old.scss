@@ -1,0 +1,66 @@
+.App {
+  padding: 4%;
+  font-family: 'Raleway', sans-serif;
+  &-body {
+    text-align: left;
+    padding: 15px;
+    &--columns {
+      display: flex;
+    }
+  }
+  &-logo--image {
+    width: 400px;
+  }
+  &-nav--wrapper {
+    list-style-type: none;
+    float: right;
+    li {
+      display: inline;
+      padding: .5em;
+      border: 1px solid black;
+      cursor: pointer;
+      margin: 5px;
+    }
+  }
+  &-nav::after {
+    content: '';
+    clear: both;
+    display: block;
+  }
+  &-splash {
+    display: inline-flex;
+    width: 100%;
+  }
+  &-intro {
+    text-align: left;
+    margin: 0 0 .2em 0;
+    &--blurb {
+      font-size: large;
+    }
+  }
+}
+
+ul.languages {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+
+.languages {
+  display: flex;
+  li {
+    display: inline-block;
+  }
+  img {
+    width: 100px;
+  }
+}
+
+.links {
+  i {
+    font-size: 3em;
+  }
+  a {
+    display: block;
+  }
+}
