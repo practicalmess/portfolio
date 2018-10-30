@@ -5,13 +5,16 @@
   border: 1px solid black;
   width: 80%;
   margin: 5% 10%;
-  position: fixed;
   -webkit-transition: top 0.5s;
   transition: top 0.5s;
 }
 .App-nav--wrapper {
   list-style-type: none;
   float: right;
+  padding: 0;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
 }
 .App-nav--wrapper li {
   display: inline;

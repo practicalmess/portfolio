@@ -7,9 +7,29 @@ import Projects from './Projects';
 import Resume from './Resume';
 import Contact from './Contact';
 import './styles/App.css';
+import * as Scroll from 'react-scroll';
+import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll'
 // import './fontawesome/css/font-awesome.min.css';
 
 class App extends Component {
+  componentDidMount() {
+    Events.scrollEvent.register('begin', function(to, element) {
+      console.log("begin", arguments);
+    });
+
+    Events.scrollEvent.register('end', function(to, element) {
+      console.log("end", arguments);
+    });
+
+    scrollSpy.update();
+
+  };
+
+  componentWillUnmount() {
+    Events.scrollEvent.remove('begin');
+    Events.scrollEvent.remove('end');
+  };
+
   state = {
     shown: 'home',
     skin: 'default'
@@ -29,6 +49,9 @@ class App extends Component {
           <div className="App-logo" />
           <div className="App-nav">
             <ul className="App-nav--wrapper">
+              <Link activeClass="active" to="test1" spy={true} smooth={true} offset={50} duration={500} onSetActive={this.handleSetActive}>
+                Test 1
+              </Link>
               <li className="App-nav--item" onClick={() => this.setState({shown: 'home'})}>Home</li>
               <li className="App-nav--item" onClick={() => this.setState({shown: 'projects'})}>Projects</li>
               <li className="App-nav--item" onClick={() => this.setState({shown: 'resume'})}>Resume</li>
@@ -46,7 +69,11 @@ class App extends Component {
           <Resume shown={this.state.shown} />
           <Contact shown={this.state.shown} />
         </div>
+        <Element name="test1" className="element">
+          test 1
+        </Element>
       </div>
+      
     );
   }
 }

@@ -4,7 +4,6 @@
     border: 1px solid black;
     width: 80%;
     margin: 5% 10%;
-    position: fixed;
     -webkit-transition: top .5s;
     transition: top .5s;
   }
@@ -24,6 +23,20 @@
     }
   }
 }
+
+// float: right;
+//     /* display: inline; */
+//     width: 48%;
+//     border: 1px solid black;
+//     text-align: justify;
+//     /* margin: 0 auto; */
+//     text-align-last: center;
+
+    // width: 48%;
+    // height: 400px;
+    // float: left;
+    // display: inline;
+    // border: 1px solid black;
 
 img {
   width: 100px;
