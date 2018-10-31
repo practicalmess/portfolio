@@ -1,14 +1,27 @@
+h1, h2, h3, h4, li {
+  font-family: "Philosopher", sans-serif;
+}
+
 .App {
   padding: 10px;
 }
+.App-body {
+  padding: 1.5em 0;
+}
 .App-section {
-  border: 1px solid black;
+  overflow: auto;
+  border-radius: 10px;
+  padding: 10px;
   width: 80%;
   margin: 5% 10%;
-  -webkit-transition: top 0.5s;
-  transition: top 0.5s;
+}
+.App-section p {
+  font-family: "Alegreya Sans", sans-serif;
+  text-align: justify;
+  text-align-last: center;
 }
 .App-nav--wrapper {
+  position: fixed;
   list-style-type: none;
   float: right;
   padding: 0;
@@ -18,14 +31,48 @@
 }
 .App-nav--wrapper li {
   display: inline;
+  background: white;
   padding: 0.5em;
-  border: 1px solid black;
+  border: 1px solid #143341;
+  border-radius: 5px;
   cursor: pointer;
   margin: 5px;
 }
 
-img {
+.Home-portrait--wrapper {
+  float: left;
+  width: 48%;
+}
+.Home-portrait--wrapper img {
+  width: 100%;
+  float: left;
+  display: inline;
+}
+.Home-intro--wrapper {
+  text-align: center;
+}
+
+.Project-card img {
+  width: 100%;
+}
+.Project-card--column1 {
+  float: left;
+  width: 40%;
+  padding-right: 1%;
+}
+
+.Resume-skills--item ul {
+  list-style-type: none;
+}
+.Resume-skills--item li {
+  display: inline;
+}
+.Resume-skills--item li img {
   width: 100px;
+}
+
+.App-section {
+  border: 1px solid #76A79C;
 }
 
 /*# sourceMappingURL=App.css.map */

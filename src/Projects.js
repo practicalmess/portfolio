@@ -1,35 +1,26 @@
     import React, { Component } from 'react';
     import ReactDOM from 'react-dom';
-    import './App.css';
+    import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+    import './styles/App.css';
+    import beatbox from './images/bbscreenshot-sq.png';
     // import './fontawesome/css/font-awesome.min.css';
 
     const Projects = (props) => {
-      const getStyle = () => {
-        const topValue = props.shown === 'projects' ? '150px' : '-1000px';
-        // const dispValue = props.shown === 'home' ? 'block' : 'none';
-        return {
-          top: topValue,
-          // display: dispValue
-        };
-      };
 
       return (
-        <div style= {getStyle()} className="App-section">
-          <div className="App-card">
-            <h2>Project 1</h2>
-            <div className="App-card--column1">
-              <img src="/" alt="A screenshot of [[something]]"/>
+        <Element name="projects" className="element">
+          <div className="App-section">
+            <h1>Projects</h1>
+            <div className="Project-card">
+              <div className="Project-card--column1">
+                <img src={beatbox} alt="A screenshot of the final design of my Beat.Box project for General Assembly."/>
+              </div>
+              <div className="Project-card--column2">
+                <h2>Beat.Box - mockup</h2>
+              </div>
             </div>
           </div>
-          <div className="App-card">
-            <h2>Project 2</h2>
-            <div className="App-card--column1">
-              <img src="/" alt="A screenshot of [[something]]"/>
-            </div>
-          </div>
-          <div className="Next-bar" id="to-resume">
-          </div>
-        </div>
+        </Element>
       );
     };
 
