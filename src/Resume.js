@@ -15,7 +15,7 @@
         <Element name="resume" className="element">
           <div className="App-section">
             <div className="Resume-experience">
-              <h3>Work Experience</h3>
+              <h1>Work Experience</h1>
               <div className="Resume-experience--item">
                 <h4>The Boston Whovians June 2013 - present | Administrator and Webmaster</h4>
                   <ul>

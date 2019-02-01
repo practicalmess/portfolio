@@ -3,6 +3,7 @@
     import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
     import './styles/App.css';
     import beatbox from './images/bbscreenshot-sq.png';
+    import bwhovians from './images/bwscreenshot.png';
     // import './fontawesome/css/font-awesome.min.css';
 
     const Projects = (props) => {
@@ -16,7 +17,17 @@
                 <img src={beatbox} alt="A screenshot of the final design of my Beat.Box project for General Assembly."/>
               </div>
               <div className="Project-card--column2">
-                <h2>Beat.Box - mockup</h2>
+                <h2>Beat.Box (mockup)</h2>
+                <p>Built as the final project for a General Assembly design course, this is a mockup for a long-scroll landing page for an imaginary music curation service.</p>
+              </div>
+            </div>
+            <div className="Project-card">
+              <div className="Project-card--column1">
+                <img src={bwhovians}/>
+              </div>
+              <div className="Project-card--column2">
+                <h2>The Boston Whovians</h2>
+                <p>description of BW website</p>
               </div>
             </div>
           </div>

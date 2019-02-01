@@ -47,22 +47,22 @@ class App extends Component {
                 </Link>
               </li>
               <li className="App-nav--item">
-                <Link activeClass="active" to="projects" smooth={true} duration={500} onSetActive={this.handleSetActive}>
+                <Link activeClass="active" to="projects" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
                   Projects
                 </Link>
               </li>
               <li className="App-nav--item">
-                <Link activeClass="active" to="resume" smooth={true} duration={500} onSetActive={this.handleSetActive}>
+                <Link activeClass="active" to="resume" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
                   Resume
                 </Link>
               </li>
               <li className="App-nav--item">
-                <Link activeClass="active" to="about" smooth={true} duration={500} onSetActive={this.handleSetActive}>
+                <Link activeClass="active" to="about" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
                   About Me
                 </Link>
               </li>
               <li className="App-nav--item">
-                <Link activeClass="active" to="contact" smooth={true} duration={500} onSetActive={this.handleSetActive}>
+                <Link activeClass="active" to="contact" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
                   Contact
                 </Link>
               </li>
