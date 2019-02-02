@@ -11,15 +11,11 @@
       return (
         <Element name="contact" className="element">
           <div className="App-section">
-            <div className="Contact-link">
-              <a href="https://github.com/practicalmess">
-                <i className="fa fa-github" aria-hidden="true"></i>
-                <br/>
-              </a>
-            </div>
+            <h1>Contact Me</h1>
             <div className="Contact-link">
               <a href="https://www.linkedin.com/in/sidney-j-hackney-9711b1ab/">
                 <i className="fa fa-linkedin-square" aria-hidden="true"></i>
+                <span>LinkedIn</span>
                 <br/>
               </a>
             </div>
@@ -30,3 +26,8 @@
 
     export default Contact;
   
+
+  // <a href="https://github.com/practicalmess">
+  //               <i className="fa fa-github" aria-hidden="true"></i>
+  //               <br/>
+  //             </a>

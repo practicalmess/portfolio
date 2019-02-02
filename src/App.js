@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import logo from './images/aquarium.jpg';
+import githublogo from './images/ghlogo.png';
+import lilogo from './images/linkedinlogo2.png';
 import Home from './Home';
 import About from './About';
 import Projects from './Projects';
@@ -42,7 +44,7 @@ class App extends Component {
           <div className="App-nav">
             <ul className="App-nav--wrapper">
               <li className="App-nav--item">
-                <Link activeClass="active" to="home" smooth={true} offset={-50} duration={500} onSetActive={this.handleSetActive}>
+                <Link activeClass="active" to="home" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
                   Home
                 </Link>
               </li>
@@ -61,14 +63,16 @@ class App extends Component {
                   About Me
                 </Link>
               </li>
-              <li className="App-nav--item">
-                <Link activeClass="active" to="contact" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
-                  Contact
-                </Link>
-              </li>
             </ul>
           </div>
-          <div className="App-header-links"/>
+          <div className="App-header--links">
+            <a href="https://github.com/practicalmess">
+              <img src={githublogo} alt="The circular logo for Github"/>
+            </a>
+            <a href="https://www.linkedin.com/in/sidney-j-hackney/">
+              <img src={lilogo} alt="The circular logo for LinkedIn"/>
+            </a>
+          </div>
         </div>
         
         <div className="App-body">
@@ -76,7 +80,10 @@ class App extends Component {
           <Projects />
           <Resume />
           <About />
-          <Contact />
+        </div>
+
+        <div className="App-footer">
+          <span>Copyright &copy; 2019 Sidney Hackney</span>
         </div>
       </div>
       

@@ -34,7 +34,7 @@
                   </ul>
               </div>
               <div className="Resume-experience--item">
-                <h4>The Mothers' Milk Bank Northeast, ?-? | Office Assistant</h4>
+                <h4>The Mothers' Milk Bank Northeast, Aug. 2013 - May 2014 | Office Assistant</h4>
                   <ul>
                     <li>Accepting, cataloging, and storing incoming milk donations</li>
                     <li>Helping with computer tasks as needed</li>

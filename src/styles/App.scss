@@ -1,14 +1,24 @@
+//Variables
+$primary-color: #143341;
+$secondary-color: #76A79C;
+
 h1, h2, h3, h4, li {
   font-family: 'Philosopher', sans-serif;
 }
 
+a {
+  text-decoration: none;
+}
+
 .App {
   padding: 10px;
+  border: 2px solid $secondary-color;
   &-body {
     padding: 1.5em 0;
   }
   &-section {
     overflow: auto;
+    border: 1px solid #76A79C;
     border-radius: 10px;
     padding: 10px;
     width: 80%;
@@ -24,6 +34,7 @@ h1, h2, h3, h4, li {
     list-style-type: none;
     padding: 0;
     width: 50%;
+    margin-top: .5em;
     margin-left: 25%;
     margin-right: 25%;
     li {
@@ -31,13 +42,25 @@ h1, h2, h3, h4, li {
       background: white;
       text-align: center;
       box-sizing: border-box;
-      width: 18%;
+      width: 23%;
       padding: .5em;
-      border: 1px solid #143341;
+      border: 1px solid $primary-color;
       border-radius: 5px;
       cursor: pointer;
       margin: 1%;
     }
+  }
+  &-header--links {
+    float: right;
+    width: 50px;
+    img {
+      width: 50px;
+    }
+  }
+  &-footer {
+    font-family: 'Alegreya Sans', sans-serif;
+    text-align: center;
+    font-size: .9em;
   }
 }
 
@@ -53,7 +76,9 @@ h1, h2, h3, h4, li {
   }
 
   &-intro--wrapper {
-    text-align: center;
+    text-align: left;
+    float: right;
+    width: 48%;
   }
 }
 
@@ -96,7 +121,5 @@ h1, h2, h3, h4, li {
 
 
 // Accessible styles
-.App-section {
-  border: 1px solid #76A79C;
-}
+
 
