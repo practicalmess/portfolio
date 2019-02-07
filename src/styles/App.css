@@ -1,4 +1,4 @@
-h1, h2, h3, h4, li {
+h1, h2, h3, h4 {
   font-family: "Philosopher", sans-serif;
 }
 
@@ -6,9 +6,13 @@ a {
   text-decoration: none;
 }
 
-.App {
-  padding: 10px;
-  border: 2px solid #76A79C;
+.App-header--wrapper {
+  width: 100%;
+  position: fixed;
+}
+.App-header--wrapper img {
+  width: 60px;
+  float: left;
 }
 .App-body {
   padding: 1.5em 0;
@@ -26,30 +30,39 @@ a {
   text-align: justify;
   text-align-last: left;
 }
+.App-nav {
+  padding: 0;
+  margin: 0;
+  background-color: #dcf3f3;
+}
+.App-nav:after {
+  content: "";
+  width: 100%;
+  clear: both;
+  display: block;
+}
 .App-nav--wrapper {
-  position: fixed;
   list-style-type: none;
+  margin: 0;
   padding: 0;
   width: 50%;
-  margin-top: 0.5em;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: 15%;
+  display: inline-block;
 }
 .App-nav--wrapper li {
+  font-family: "Philosopher", sans-serif;
   display: inline-block;
-  background: white;
   text-align: center;
+  line-height: 20px;
   box-sizing: border-box;
   width: 23%;
-  padding: 0.5em;
-  border: 1px solid #143341;
   border-radius: 5px;
   cursor: pointer;
-  margin: 1%;
+  margin: 20px 1% 0 1%;
 }
 .App-header--links {
   float: right;
-  width: 50px;
+  padding: 5px;
 }
 .App-header--links img {
   width: 50px;

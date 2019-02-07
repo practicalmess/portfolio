@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import logo from './images/aquarium.jpg';
+import portrait from './images/aquarium.jpg';
+import logo from './images/logo-proto.png';
 import githublogo from './images/ghlogo.png';
 import lilogo from './images/linkedinlogo2.png';
 import Home from './Home';
@@ -40,7 +41,9 @@ class App extends Component {
     return (
       <div className="App">
         <div className="App-header--wrapper">
-          <div className="App-logo" />
+          <div className="App-logo">
+            <img src={logo} alt="My logo: an outlined, teal silhouette of a sea turtle with the letters 'SH' superimposed." />
+          </div>
           <div className="App-nav">
             <ul className="App-nav--wrapper">
               <li className="App-nav--item">
@@ -64,14 +67,14 @@ class App extends Component {
                 </Link>
               </li>
             </ul>
-          </div>
-          <div className="App-header--links">
-            <a href="https://github.com/practicalmess">
-              <img src={githublogo} alt="The circular logo for Github"/>
-            </a>
-            <a href="https://www.linkedin.com/in/sidney-j-hackney/">
-              <img src={lilogo} alt="The circular logo for LinkedIn"/>
-            </a>
+            <div className="App-header--links">
+              <a href="https://github.com/practicalmess">
+                <img src={githublogo} alt="The circular logo for Github"/>
+              </a>
+              <a href="https://www.linkedin.com/in/sidney-j-hackney/">
+                <img src={lilogo} alt="The circular logo for LinkedIn"/>
+              </a>
+            </div>
           </div>
         </div>
         

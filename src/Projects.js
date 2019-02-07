@@ -27,7 +27,7 @@
               </div>
               <div className="Project-card--column2">
                 <h2>The Boston Whovians</h2>
-                <p>description of BW website</p>
+                <p>This is the current homepage for the meetup and cosplay group, the Boston Whovians. It is built in Wordpress with an out-of-the-box theme.</p>
               </div>
             </div>
           </div>

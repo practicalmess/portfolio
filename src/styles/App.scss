@@ -2,7 +2,10 @@
 $primary-color: #143341;
 $secondary-color: #76A79C;
 
-h1, h2, h3, h4, li {
+$logo-height: 60px;
+$logo-height-third: $logo-height / 3;
+
+h1, h2, h3, h4 {
   font-family: 'Philosopher', sans-serif;
 }
 
@@ -11,8 +14,14 @@ a {
 }
 
 .App {
-  padding: 10px;
-  border: 2px solid $secondary-color;
+  &-header--wrapper {
+    width: 100%;
+    position: fixed;
+    img {
+      width: $logo-height;
+      float: left;
+    }
+  }
   &-body {
     padding: 1.5em 0;
   }
@@ -29,30 +38,39 @@ a {
       text-align-last: left;
     }
   }
+  &-nav {
+    padding: 0;
+    margin: 0;
+    background-color: #dcf3f3;
+    &:after {
+      content: "";
+      width: 100%;
+      clear: both;
+      display: block;
+    }
+  }
   &-nav--wrapper {
-    position: fixed;
     list-style-type: none;
+    margin: 0;
     padding: 0;
     width: 50%;
-    margin-top: .5em;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin-left: 15%;
+    display: inline-block;
     li {
+      font-family: 'Philosopher', sans-serif;
       display: inline-block;
-      background: white;
       text-align: center;
+      line-height: $logo-height-third;
       box-sizing: border-box;
       width: 23%;
-      padding: .5em;
-      border: 1px solid $primary-color;
       border-radius: 5px;
       cursor: pointer;
-      margin: 1%;
+      margin: $logo-height-third 1% 0 1%;
     }
   }
   &-header--links {
     float: right;
-    width: 50px;
+    padding: 5px;
     img {
       width: 50px;
     }
