@@ -9,21 +9,22 @@ a {
 .App-header--wrapper {
   width: 100%;
   position: fixed;
+  z-index: 1;
 }
 .App-header--wrapper img {
   width: 60px;
   float: left;
 }
 .App-body {
-  padding: 1.5em 0;
+  padding: 60px 0;
 }
 .App-section {
   overflow: auto;
   border: 1px solid #76A79C;
   border-radius: 10px;
   padding: 10px;
-  width: 80%;
-  margin: 5% 10%;
+  width: 83.3333333333%;
+  margin: 1% auto 5% auto;
 }
 .App-section p {
   font-family: "Alegreya Sans", sans-serif;
@@ -43,22 +44,30 @@ a {
 }
 .App-nav--wrapper {
   list-style-type: none;
-  margin: 0;
-  padding: 0;
-  width: 50%;
-  margin-left: 15%;
-  display: inline-block;
+  width: 66.6666666667%;
+}
+@media screen and (min-width: 576px) {
+  .App-nav--wrapper {
+    margin: 0 0 0 0;
+    padding: 0;
+    display: inline-block;
+  }
 }
 .App-nav--wrapper li {
-  font-family: "Philosopher", sans-serif;
-  display: inline-block;
-  text-align: center;
-  line-height: 20px;
-  box-sizing: border-box;
-  width: 23%;
-  border-radius: 5px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
   cursor: pointer;
-  margin: 20px 1% 0 1%;
+}
+@media screen and (min-width: 576px) {
+  .App-nav--wrapper li {
+    display: inline-block;
+    text-align: center;
+    line-height: 20px;
+    box-sizing: border-box;
+    width: 16.6666666667%;
+    border-radius: 5px;
+    margin: 20px 1% 0 1%;
+  }
 }
 .App-header--links {
   float: right;
@@ -73,19 +82,31 @@ a {
   font-size: 0.9em;
 }
 
-.Home-portrait--wrapper {
-  float: left;
-  width: 48%;
+@media screen and (min-width: 608px) {
+  .Home-portrait--wrapper {
+    float: left;
+    width: 48%;
+  }
 }
 .Home-portrait--wrapper img {
   width: 100%;
-  float: left;
   display: inline;
 }
 .Home-intro--wrapper {
   text-align: left;
-  float: right;
   width: 48%;
+}
+@media screen and (min-width: 607px) {
+  .Home-intro--wrapper {
+    float: right;
+  }
+}
+@media screen and (max-width: 607px) {
+  .Home-intro--wrapper {
+    text-align: center;
+    width: 70%;
+    margin: 0 15%;
+  }
 }
 
 .Project-card img {
