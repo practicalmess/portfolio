@@ -7,11 +7,18 @@ a {
 }
 
 @media screen and (max-width: 699px) {
-  .App .hide {
+  .hide {
     display: none;
   }
-  .App .show {
+
+  .show {
     display: block;
+  }
+}
+@media screen and (min-width: 700px) {
+  .App-logo {
+    position: fixed;
+    float: left;
   }
 }
 .App-header--wrapper {
@@ -28,8 +35,6 @@ a {
 }
 .App-section {
   overflow: auto;
-  border: 1px solid #76A79C;
-  border-radius: 10px;
   padding: 10px;
   width: 83.3333333333%;
   margin: 1% auto 5% auto;
@@ -38,6 +43,15 @@ a {
   font-family: "Alegreya Sans", sans-serif;
   text-align: justify;
   text-align-last: left;
+}
+.App-section:after {
+  content: "";
+  border-bottom: 1px black solid;
+  width: 60%;
+  padding-top: 10%;
+  margin: 0 20%;
+  clear: both;
+  display: block;
 }
 .App-nav {
   padding: 0;
@@ -56,6 +70,11 @@ a {
   /* Rotate first bar */
   /* Fade out the second bar */
   /* Rotate last bar */
+}
+@media screen and (min-width: 700px) {
+  .App-nav--hamburger {
+    display: none;
+  }
 }
 .App-nav--hamburger .bar1, .App-nav--hamburger .bar2, .App-nav--hamburger .bar3 {
   width: 35px;
@@ -102,9 +121,19 @@ a {
     margin: 20px 1% 0 1%;
   }
 }
+@media screen and (max-width: 699px) {
+  .App-nav--wrapper li {
+    width: 100%;
+    float: left;
+    font-size: 24px;
+  }
+}
 .App-header--links {
   float: right;
   padding: 5px;
+  position: fixed;
+  right: 0;
+  top: 0;
 }
 .App-header--links img {
   width: 50px;

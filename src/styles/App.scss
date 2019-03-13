@@ -18,6 +18,8 @@ $logo-height: 60px;
 // $logo-height: $column-1;
 $logo-height-third: $logo-height / 3;
 
+$font-size-copy: 13px;
+$font-size-bigger: 24px;
 
 $portrait-height: 470px;
 
@@ -32,15 +34,22 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: $break-menu - 1) {
+  .hide {
+    display: none;
+  }
+  .show {
+    display: block;
+  }
+}
+
 // Basic styles
 // --todo:; replace with universal styles
 .App {
-  @media screen and (max-width: $break-menu - 1) {
-    .hide {
-      display: none;
-    }
-    .show {
-      display: block;
+  &-logo {
+    @media screen and (min-width: $break-menu) {
+      position: fixed;
+      float: left;
     }
   }
   &-header--wrapper {
@@ -57,8 +66,8 @@ a {
   }
   &-section {
     overflow: auto;
-    border: 1px solid #76A79C;
-    border-radius: 10px;
+    // border: 1px solid #76A79C;
+    // border-radius: 10px;
     padding: 10px;
     width: $column-10;
     margin: 1% auto 5% auto;
@@ -66,6 +75,15 @@ a {
       font-family: 'Alegreya Sans', sans-serif;
       text-align: justify;
       text-align-last: left;
+    }
+    &:after {
+      content: "";
+      border-bottom: 1px black solid;
+      width: 60%;
+      padding-top: 10%;
+      margin: 0 20%;
+      clear: both;
+      display: block;
     }
   }
   &-nav {
@@ -79,6 +97,9 @@ a {
       display: block;
     }
     &--hamburger {
+      @media screen and (min-width: $break-menu) {
+        display: none;
+      }
       float: left;
       padding: 10px;
       .bar1, .bar2, .bar3 {
@@ -129,6 +150,11 @@ a {
         border-radius: 5px;
         margin: $logo-height-third 1% 0 1%;
       }
+      @media screen and (max-width: $break-menu - 1) {
+        width: 100%;
+        float: left;
+        font-size: $font-size-bigger;
+      }
     }
   }
   &-header--links {
@@ -137,6 +163,9 @@ a {
     img {
       width: 50px;
     }
+    position: fixed;
+    right: 0;
+    top: 0;
   }
   &-footer {
     font-family: 'Alegreya Sans', sans-serif;
