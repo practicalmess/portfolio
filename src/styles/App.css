@@ -6,6 +6,14 @@ a {
   text-decoration: none;
 }
 
+@media screen and (max-width: 699px) {
+  .App .hide {
+    display: none;
+  }
+  .App .show {
+    display: block;
+  }
+}
 .App-header--wrapper {
   width: 100%;
   position: fixed;
@@ -42,13 +50,38 @@ a {
   clear: both;
   display: block;
 }
+.App-nav--hamburger {
+  float: left;
+  padding: 10px;
+  /* Rotate first bar */
+  /* Fade out the second bar */
+  /* Rotate last bar */
+}
+.App-nav--hamburger .bar1, .App-nav--hamburger .bar2, .App-nav--hamburger .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: #333;
+  margin: 6px 0;
+  transition: 0.4s;
+}
+.App-nav--hamburger .change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+  transform: rotate(-45deg) translate(-9px, 6px);
+}
+.App-nav--hamburger .change .bar2 {
+  opacity: 0;
+}
+.App-nav--hamburger .change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
 .App-nav--wrapper {
   list-style-type: none;
-  width: 66.6666666667%;
+  margin: 0;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 700px) {
   .App-nav--wrapper {
-    margin: 0 0 0 0;
+    width: 66.6666666667%;
     padding: 0;
     display: inline-block;
   }
@@ -58,7 +91,7 @@ a {
   font-weight: bold;
   cursor: pointer;
 }
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 700px) {
   .App-nav--wrapper li {
     display: inline-block;
     text-align: center;
@@ -90,6 +123,7 @@ a {
 }
 .Home-portrait--wrapper img {
   width: 100%;
+  max-width: 400px;
   display: inline;
 }
 .Home-intro--wrapper {

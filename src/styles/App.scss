@@ -19,10 +19,10 @@ $logo-height: 60px;
 $logo-height-third: $logo-height / 3;
 
 
-$portrait-height: 470;
+$portrait-height: 470px;
 
 $break-small: 607px;
-$break-menu: 576px;
+$break-menu: 700px;
 
 h1, h2, h3, h4 {
   font-family: 'Philosopher', sans-serif;
@@ -35,6 +35,14 @@ a {
 // Basic styles
 // --todo:; replace with universal styles
 .App {
+  @media screen and (max-width: $break-menu - 1) {
+    .hide {
+      display: none;
+    }
+    .show {
+      display: block;
+    }
+  }
   &-header--wrapper {
     width: 100%;
     position: fixed;
@@ -70,12 +78,41 @@ a {
       clear: both;
       display: block;
     }
+    &--hamburger {
+      float: left;
+      padding: 10px;
+      .bar1, .bar2, .bar3 {
+        width: 35px;
+        height: 5px;
+        background-color: #333;
+        margin: 6px 0;
+        transition: 0.4s;
+      }
+      /* Rotate first bar */
+      .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+        transform: rotate(-45deg) translate(-9px, 6px) ;
+      }
+
+      /* Fade out the second bar */
+      .change .bar2 {
+        opacity: 0;
+      }
+
+      /* Rotate last bar */
+      .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+        transform: rotate(45deg) translate(-8px, -8px) ;
+      }
+    }
   }
   &-nav--wrapper {
     list-style-type: none;
-    width: $column-8;
+    margin: 0;
+    // width: $column-8;
     @media screen and (min-width: $break-menu) {
-      margin: 0 0 0 0;
+      width: $column-8;
+      // margin: 0 0 0 0;
       padding: 0;
       display: inline-block;
     }
@@ -119,6 +156,7 @@ a {
       //   opacity: .5;
       // }
       width: 100%;
+      max-width: 400px;
       display: inline;
     }  
   }
