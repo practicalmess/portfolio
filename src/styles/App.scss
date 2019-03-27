@@ -87,7 +87,7 @@ a {
     }
   }
   &-nav {
-    padding: 0;
+    padding-bottom: 1.2em;
     margin: 0;
     background-color: #dcf3f3;
     &:after {
@@ -110,18 +110,18 @@ a {
         transition: 0.4s;
       }
       /* Rotate first bar */
-      .change .bar1 {
+      .change.bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
         transform: rotate(-45deg) translate(-9px, 6px) ;
       }
 
       /* Fade out the second bar */
-      .change .bar2 {
+      .change.bar2 {
         opacity: 0;
       }
 
       /* Rotate last bar */
-      .change .bar3 {
+      .change.bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
         transform: rotate(45deg) translate(-8px, -8px) ;
       }
@@ -129,7 +129,7 @@ a {
   }
   &-nav--wrapper {
     list-style-type: none;
-    margin: 0;
+    margin: 0 $logo-height;
     // width: $column-8;
     @media screen and (min-width: $break-menu) {
       width: $column-8;

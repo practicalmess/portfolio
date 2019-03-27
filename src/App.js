@@ -41,12 +41,7 @@ class App extends Component {
   };
 
   toggleMenu () {
-    // console.log(this);
     this.setState({menuOpen: !this.state.menuOpen});
-    const toggleMenuClass = this.state.menuOpen ? 'show' : 'hide';
-    console.log(toggleMenuClass);
-    return toggleMenuClass;
-    
   };
 
   render() {
@@ -55,9 +50,9 @@ class App extends Component {
         <div className="App-header--wrapper">
           <div className="App-nav">
             <div className="App-nav--hamburger" onClick={this.toggleMenu.bind(this)}>
-              <div className="bar1" />
-              <div className="bar2" />
-              <div className="bar3" />
+              <div className={`${this.state.menuOpen ? 'change' : ''} bar1`} />
+              <div className={`${this.state.menuOpen ? 'change' : ''} bar2`} />
+              <div className={`${this.state.menuOpen ? 'change' : ''} bar3`} />
             </div>
             <div className="App-logo">
               <img src={logo} alt="My logo: an outlined, teal silhouette of a sea turtle with the letters 'SH' superimposed." />

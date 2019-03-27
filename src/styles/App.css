@@ -54,7 +54,7 @@ a {
   display: block;
 }
 .App-nav {
-  padding: 0;
+  padding-bottom: 1.2em;
   margin: 0;
   background-color: #dcf3f3;
 }
@@ -83,20 +83,20 @@ a {
   margin: 6px 0;
   transition: 0.4s;
 }
-.App-nav--hamburger .change .bar1 {
+.App-nav--hamburger .change.bar1 {
   -webkit-transform: rotate(-45deg) translate(-9px, 6px);
   transform: rotate(-45deg) translate(-9px, 6px);
 }
-.App-nav--hamburger .change .bar2 {
+.App-nav--hamburger .change.bar2 {
   opacity: 0;
 }
-.App-nav--hamburger .change .bar3 {
+.App-nav--hamburger .change.bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
 .App-nav--wrapper {
   list-style-type: none;
-  margin: 0;
+  margin: 0 60px;
 }
 @media screen and (min-width: 700px) {
   .App-nav--wrapper {
