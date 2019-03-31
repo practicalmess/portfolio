@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// import portrait from './images/me.jpg';
-import portrait from './images/aquarium.jpg';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import './styles/App.css';
 // import './fontawesome/css/font-awesome.min.css';
@@ -12,7 +10,7 @@ const Home = (props) => {
     <Element name="home" className="element">
       <div className="App-section">
         <div className="Home-portrait--wrapper">
-          <img src={portrait} className="Home-portrait--image" alt="portrait" />
+          {/*<img src={portrait} className="Home-portrait--image" alt="portrait" />*/}
         </div>
         <div className="Home-intro--wrapper">
           <h1 className="Home-intro header-text">Sidney J Hackney</h1>

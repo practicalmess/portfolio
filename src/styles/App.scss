@@ -27,7 +27,7 @@ $break-small: 607px;
 $break-menu: 700px;
 
 h1, h2, h3, h4 {
-  font-family: 'Philosopher', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 a {
@@ -62,7 +62,7 @@ a {
     }
   }
   &-body {
-    padding: $logo-height 0;
+    padding: 1px 0;
   }
   &-section {
     overflow: auto;
@@ -76,7 +76,7 @@ a {
       text-align: justify;
       text-align-last: left;
     }
-    &:after {
+    &:not(:first-child):after {
       content: "";
       border-bottom: 1px black solid;
       width: 60%;
@@ -89,7 +89,7 @@ a {
   &-nav {
     padding-bottom: 1.2em;
     margin: 0;
-    background-color: #dcf3f3;
+    background-color: #56848E;
     &:after {
       content: "";
       width: 100%;
@@ -172,6 +172,16 @@ a {
     text-align: center;
     font-size: .9em;
   }
+}
+
+.element:first-of-type {
+  padding-top: 5%;
+  content: '';
+  background-image: url('../images/ocean-background.png');
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-attachment: fixed;
 }
 
 .Home {

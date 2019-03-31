@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import portrait from './images/aquarium.jpg';
 import logo from './images/logo-proto.png';
 import githublogo from './images/ghlogo.png';
 import lilogo from './images/linkedinlogo2.png';
@@ -61,22 +60,22 @@ class App extends Component {
               <ul className="App-nav--wrapper">
                 <li className="App-nav--item">
                   <Link activeClass="active" to="home" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
-                    Home
+                    HOME
                   </Link>
                 </li>
                 <li className="App-nav--item">
                   <Link activeClass="active" to="projects" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
-                    Projects
+                    PROJECTS
                   </Link>
                 </li>
                 <li className="App-nav--item">
                   <Link activeClass="active" to="resume" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
-                    Resume
+                    RESUME
                   </Link>
                 </li>
                 <li className="App-nav--item">
                   <Link activeClass="active" to="about" smooth={true} offset={-70} duration={500} onSetActive={this.handleSetActive}>
-                    About Me
+                    ABOUT ME
                   </Link>
                 </li>
               </ul>
