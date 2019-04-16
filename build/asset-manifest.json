@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.317b91bf.css",
-  "main.css.map": "static/css/main.317b91bf.css.map",
-  "main.js": "static/js/main.3818c58e.js",
-  "main.js.map": "static/js/main.3818c58e.js.map",
+  "main.css": "static/css/main.a2b6eeac.css",
+  "main.css.map": "static/css/main.a2b6eeac.css.map",
+  "main.js": "static/js/main.ac76bf87.js",
+  "main.js.map": "static/js/main.ac76bf87.js.map",
   "static/media/PHP-logo.svg": "static/media/PHP-logo.3a1af498.svg",
   "static/media/React-icon.svg": "static/media/React-icon.05a3e30f.svg",
   "static/media/aquarium.jpg": "static/media/aquarium.efe305bb.jpg",
@@ -18,5 +18,6 @@
   "static/media/lilogo.png": "static/media/lilogo.91cbcbc7.png",
   "static/media/linkedinlogo2.png": "static/media/linkedinlogo2.998f8545.png",
   "static/media/logo-proto.png": "static/media/logo-proto.399279cd.png",
+  "static/media/ocean-background.png": "static/media/ocean-background.588a0c68.png",
   "static/media/sass.svg": "static/media/sass.c2db7b2f.svg"
 }
