@@ -11,7 +11,7 @@
       return (
         <Element name="contact" className="element">
           <div className="App-section">
-            <h1>Contact Me</h1>
+            <h1 className="App-section--header">Contact Me</h1>
             <div className="Contact-link">
               <a href="https://www.linkedin.com/in/sidney-j-hackney-9711b1ab/">
                 <i className="fa fa-linkedin-square" aria-hidden="true"></i>

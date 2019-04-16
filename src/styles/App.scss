@@ -85,6 +85,9 @@ a {
       clear: both;
       display: block;
     }
+    &--header {
+      text-align: center;
+    }
   }
   &-nav {
     padding-bottom: 1.2em;
@@ -201,16 +204,23 @@ a {
   }
 
   &-intro--wrapper {
-    text-align: left;
-    width: 48%;
+    text-align: center;
+    // width: 48%;
+    width: 100%;
     @media screen and (min-width: $break-small) {
-      float: right;
+      // float: right;
     }
     @media screen and (max-width: $break-small) {
-      text-align: center;
       width: 70%;
       margin: 0 15%;
     }
+  }
+
+  &-intro .copy-text {
+    background: rgba(255, 255, 255, .5);
+    width: 40%;
+    margin: 10% 30% 0 30%;
+    padding: 1%;
   }
 }
 

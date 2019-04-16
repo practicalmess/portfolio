@@ -53,6 +53,9 @@ a {
   clear: both;
   display: block;
 }
+.App-section--header {
+  text-align: center;
+}
 .App-nav {
   padding-bottom: 1.2em;
   margin: 0;
@@ -166,20 +169,20 @@ a {
   display: inline;
 }
 .Home-intro--wrapper {
-  text-align: left;
-  width: 48%;
-}
-@media screen and (min-width: 607px) {
-  .Home-intro--wrapper {
-    float: right;
-  }
+  text-align: center;
+  width: 100%;
 }
 @media screen and (max-width: 607px) {
   .Home-intro--wrapper {
-    text-align: center;
     width: 70%;
     margin: 0 15%;
   }
+}
+.Home-intro .copy-text {
+  background: rgba(255, 255, 255, 0.5);
+  width: 40%;
+  margin: 10% 30% 0 30%;
+  padding: 1%;
 }
 
 .Project-card img {
