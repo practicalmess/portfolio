@@ -23,8 +23,8 @@ $font-size-bigger: 24px;
 
 $portrait-height: 470px;
 
-$break-small: 607px;
-$break-menu: 700px;
+$break-small: 749px;
+$break-menu: 749px;
 
 h1, h2, h3, h4 {
   font-family: 'Josefin Sans', sans-serif;
@@ -207,12 +207,9 @@ a {
     text-align: center;
     // width: 48%;
     width: 100%;
-    @media screen and (min-width: $break-small) {
-      // float: right;
-    }
     @media screen and (max-width: $break-small) {
       width: 70%;
-      margin: 0 15%;
+      margin: 15%;
     }
   }
 
@@ -221,6 +218,10 @@ a {
     width: 40%;
     margin: 10% 30% 0 30%;
     padding: 1%;
+    @media screen and (max-width: $break-small) {
+      margin: 0;
+      width: 100%;
+    }
   }
 }
 

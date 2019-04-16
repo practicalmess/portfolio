@@ -6,7 +6,7 @@ a {
   text-decoration: none;
 }
 
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 748px) {
   .hide {
     display: none;
   }
@@ -15,7 +15,7 @@ a {
     display: block;
   }
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 749px) {
   .App-logo {
     position: fixed;
     float: left;
@@ -74,7 +74,7 @@ a {
   /* Fade out the second bar */
   /* Rotate last bar */
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 749px) {
   .App-nav--hamburger {
     display: none;
   }
@@ -101,7 +101,7 @@ a {
   list-style-type: none;
   margin: 0 60px;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 749px) {
   .App-nav--wrapper {
     width: 66.6666666667%;
     padding: 0;
@@ -113,7 +113,7 @@ a {
   font-weight: bold;
   cursor: pointer;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 749px) {
   .App-nav--wrapper li {
     display: inline-block;
     text-align: center;
@@ -124,7 +124,7 @@ a {
     margin: 20px 1% 0 1%;
   }
 }
-@media screen and (max-width: 699px) {
+@media screen and (max-width: 748px) {
   .App-nav--wrapper li {
     width: 100%;
     float: left;
@@ -157,7 +157,7 @@ a {
   background-attachment: fixed;
 }
 
-@media screen and (min-width: 608px) {
+@media screen and (min-width: 750px) {
   .Home-portrait--wrapper {
     float: left;
     width: 48%;
@@ -172,10 +172,10 @@ a {
   text-align: center;
   width: 100%;
 }
-@media screen and (max-width: 607px) {
+@media screen and (max-width: 749px) {
   .Home-intro--wrapper {
     width: 70%;
-    margin: 0 15%;
+    margin: 15%;
   }
 }
 .Home-intro.copy-text {
@@ -183,6 +183,12 @@ a {
   width: 40%;
   margin: 10% 30% 0 30%;
   padding: 1%;
+}
+@media screen and (max-width: 749px) {
+  .Home-intro.copy-text {
+    margin: 0;
+    width: 100%;
+  }
 }
 
 .Project-card img {
