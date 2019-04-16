@@ -11,7 +11,7 @@
       return (
         <Element name="projects" className="element">
           <div className="App-section">
-            <h1>Projects</h1>
+            <h1 className="App-section--header">Projects</h1>
             <div className="Project-card">
               <div className="Project-card--column1">
                 <img src={beatbox} alt="A screenshot of the final design of my Beat.Box project for General Assembly."/>
