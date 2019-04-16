@@ -178,7 +178,7 @@ a {
     margin: 0 15%;
   }
 }
-.Home-intro .copy-text {
+.Home-intro.copy-text {
   background: rgba(255, 255, 255, 0.5);
   width: 40%;
   margin: 10% 30% 0 30%;
