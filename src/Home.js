@@ -22,9 +22,7 @@ const Home = (props) => {
             This website is still in its infancy. Features yet to come:
             <ul>
               <li>Accessibility settings (font size, contrast, etc.)</li>
-              <li>Responsive styles</li>
               <li>More detailed descriptions of my past projects</li>
-              <li>A much spiffier design!</li>
             </ul>
           </p>
         </div>
