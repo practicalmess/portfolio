@@ -14,19 +14,27 @@
             <h1 className="App-section--header">Projects</h1>
             <div className="Project-card">
               <div className="Project-card--column1">
-                <img src={beatbox} alt="A screenshot of the final design of my Beat.Box project for General Assembly."/>
+                <a href="https://invis.io/WSLJFVHMC7V#/304593239_main_Page">
+                  <img src={beatbox} alt="A screenshot of the final design of my Beat.Box project for General Assembly."/>
+                </a>
               </div>
               <div className="Project-card--column2">
-                <h2>Beat.Box (mockup)</h2>
+                <a href="https://invis.io/WSLJFVHMC7V#/304593239_main_Page">
+                  <h2>Beat.Box (mockup)</h2>
+                </a>
                 <p>Built as the final project for a General Assembly design course, this is a mockup for a long-scroll landing page for an imaginary music curation service.</p>
               </div>
             </div>
             <div className="Project-card">
               <div className="Project-card--column1">
-                <img src={bwhovians}/>
+                <a href="http://bostonwhovians.com">
+                  <img src={bwhovians} alt="A screenshot of the homepage for the Boston Whovians"/>
+                </a>
               </div>
               <div className="Project-card--column2">
-                <h2>The Boston Whovians</h2>
+                <a href="http://bostonwhovians.com">
+                  <h2>The Boston Whovians</h2>
+                </a>
                 <p>This is the current homepage for the meetup and cosplay group, the Boston Whovians. It is built in Wordpress with an out-of-the-box theme.</p>
               </div>
             </div>
