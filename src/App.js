@@ -1,3 +1,10 @@
+/**
+ * App.js
+ *
+ * Main app file, contains scroll component for navigating between all child components
+ * Sid Hackney 2019
+ */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
 import logo from './images/logo-proto.png';
@@ -11,7 +18,6 @@ import Contact from './Contact';
 import './styles/App.css';
 import * as Scroll from 'react-scroll';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
-// import './fontawesome/css/font-awesome.min.css';
 
 class App extends Component {
   constructor(props) {
@@ -21,6 +27,8 @@ class App extends Component {
       skin: 'default'
     };
   }
+
+  // Scroll component functions
   componentDidMount() {
     Events.scrollEvent.register('begin', function(to, element) {
       console.log("begin", arguments);
@@ -31,7 +39,6 @@ class App extends Component {
     });
 
     scrollSpy.update();
-
   };
 
   componentWillUnmount() {

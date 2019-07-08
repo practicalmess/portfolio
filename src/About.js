@@ -1,9 +1,14 @@
+/**
+ * About.js
+ *
+ * Written "about me" section
+ * Sid Hackney 2019
+ */
+
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import logo from './images/aquarium.jpg';
 import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
 import './styles/App.css';
-// import './fontawesome/css/font-awesome.min.css';
 
 const About = (props) => {
 
