@@ -188,7 +188,7 @@ a {
 .Home-intro.copy-text {
   background: rgba(255, 255, 255, 0.5);
   margin: 10% 15% 0 15%;
-  padding: 1%;
+  padding: 1em;
 }
 @media screen and (max-width: 749px) {
   .Home-intro.copy-text {

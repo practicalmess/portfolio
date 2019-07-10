@@ -19,11 +19,7 @@ const Home = (props) => {
           <h1 className="Home-intro header-text">Sidney J Hackney</h1>
           <h3 className="Home-intro header-text">a full-stack web developer</h3>
           <p className="Home-intro copy-text">
-            This website is still in its infancy. Features yet to come:
-            <ul>
-              <li>Accessibility settings (font size, contrast, etc.)</li>
-              <li>More detailed descriptions of my past projects</li>
-            </ul>
+            I am a junior developer/designer who loves learning new skills through experimentation. I pride myself on my ability to quickly become familiar with systems and concepts I have never encountered, and I am excited to use my skills to work on a wide variety of projects in the future as my knowledge and experience expand. 
           </p>
         </div>
       </div>
