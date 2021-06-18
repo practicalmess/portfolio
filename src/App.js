@@ -106,7 +106,7 @@ class App extends Component {
         </div>
 
         <div className="App-footer">
-          <span>Copyright &copy; 2019 Sidney Hackney</span>
+          <span>Copyright &copy; 2021 Sidney Hackney</span>
         </div>
       </div>
       
