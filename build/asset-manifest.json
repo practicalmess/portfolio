@@ -1,11 +1,10 @@
 {
-  "main.css": "static/css/main.a2b6eeac.css",
-  "main.css.map": "static/css/main.a2b6eeac.css.map",
-  "main.js": "static/js/main.ac76bf87.js",
-  "main.js.map": "static/js/main.ac76bf87.js.map",
+  "main.css": "static/css/main.ba72bc88.css",
+  "main.css.map": "static/css/main.ba72bc88.css.map",
+  "main.js": "static/js/main.bce8770a.js",
+  "main.js.map": "static/js/main.bce8770a.js.map",
   "static/media/PHP-logo.svg": "static/media/PHP-logo.3a1af498.svg",
   "static/media/React-icon.svg": "static/media/React-icon.05a3e30f.svg",
-  "static/media/aquarium.jpg": "static/media/aquarium.efe305bb.jpg",
   "static/media/bbscreenshot-sq.png": "static/media/bbscreenshot-sq.03697001.png",
   "static/media/bwscreenshot.png": "static/media/bwscreenshot.9250e2b7.png",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
@@ -14,10 +13,13 @@
   "static/media/fontawesome-webfont.woff2?v=4.7.0": "static/media/fontawesome-webfont.af7ae505.woff2",
   "static/media/fontawesome-webfont.woff?v=4.7.0": "static/media/fontawesome-webfont.fee66e71.woff",
   "static/media/ghlogo.png": "static/media/ghlogo.155d4830.png",
+  "static/media/graphql_logo.png": "static/media/graphql_logo.8c005987.png",
+  "static/media/kubernetes_logo.png": "static/media/kubernetes_logo.63228854.png",
   "static/media/laravel.jpg": "static/media/laravel.36533370.jpg",
   "static/media/lilogo.png": "static/media/lilogo.91cbcbc7.png",
   "static/media/linkedinlogo2.png": "static/media/linkedinlogo2.998f8545.png",
   "static/media/logo-proto.png": "static/media/logo-proto.399279cd.png",
   "static/media/ocean-background.png": "static/media/ocean-background.588a0c68.png",
-  "static/media/sass.svg": "static/media/sass.c2db7b2f.svg"
+  "static/media/sass.svg": "static/media/sass.c2db7b2f.svg",
+  "static/media/typescript_logo.svg": "static/media/typescript_logo.d5104695.svg"
 }
