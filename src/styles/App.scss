@@ -26,6 +26,7 @@ $portrait-height: 470px;
 $break-small: 749px;
 $break-menu: 789px;
 
+// Headers
 h1, h2, h3, h4 {
   font-family: 'Josefin Sans', sans-serif;
 }
@@ -34,6 +35,7 @@ a {
   text-decoration: none;
 }
 
+// Classes applied under menu breakpoint to show and hide mobile menu
 @media screen and (max-width: $break-menu - 1) {
   .hide {
     display: none;
@@ -46,6 +48,7 @@ a {
 // Basic styles
 // --todo:; replace with universal styles
 .App {
+  // Top Bar
   &-logo {
     @media screen and (min-width: $break-menu) {
       position: fixed;
@@ -61,6 +64,8 @@ a {
       float: left;
     }
   }
+
+  // Main body
   &-body {
     padding: 1px 0;
   }
@@ -75,6 +80,7 @@ a {
       text-align: justify;
       text-align-last: left;
     }
+    // Create visual break between sections, not including the first one directly beneath the header
     &:not(:first-child):after {
       content: "";
       border-bottom: 1px black solid;
@@ -88,6 +94,8 @@ a {
       text-align: center;
     }
   }
+
+  // Navigation section
   &-nav {
     padding-bottom: 1.2em;
     margin: 0;
@@ -114,24 +122,25 @@ a {
         margin: 6px 0;
         transition: 0.4s;
       }
-      /* Rotate first bar */
+       // Rotate first bar 
       .change.bar1 {
         -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
         transform: rotate(-45deg) translate(-9px, 6px) ;
       }
 
-      /* Fade out the second bar */
+       // Fade out the second bar 
       .change.bar2 {
         opacity: 0;
       }
 
-      /* Rotate last bar */
+       // Rotate last bar 
       .change.bar3 {
         -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
         transform: rotate(45deg) translate(-8px, -8px) ;
       }
     }
   }
+  // Navigation content
   &-nav--wrapper {
     list-style-type: none;
     margin: 0 $logo-height;
@@ -163,6 +172,8 @@ a {
       }
     }
   }
+
+  // Header and Footer
   &-header--links {
     float: right;
     padding: 5px;
@@ -180,6 +191,7 @@ a {
   }
 }
 
+// Scrolling ocean background, fixed background image targeting the first element
 .element:first-of-type {
   padding-top: 5%;
   content: '';
@@ -190,6 +202,7 @@ a {
   background-attachment: fixed;
 }
 
+// Home, the main section
 .Home {
   &-portrait--wrapper {
     @media screen and (min-width: $break-small + 1) {
@@ -224,6 +237,7 @@ a {
   }
 }
 
+// Styles for the project sections
 .Project {
   &-card {
     img {
@@ -242,6 +256,7 @@ a {
   }
 }
 
+// Styles for resume section
 .Resume {
   &-skills--item {
     ul {

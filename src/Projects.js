@@ -29,6 +29,7 @@ const Projects = (props) => {
               <h2>Beat.Box (mockup)</h2>
             </a>
             <p>Built as the final project for a General Assembly design course, this is a mockup for a long-scroll landing page for an imaginary music curation service.</p>
+            
           </div>
         </div>
         <div className="Project-card">
