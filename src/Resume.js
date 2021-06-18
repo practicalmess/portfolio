@@ -34,7 +34,7 @@ const Resume = (props) => {
               </ul>
           </div>
           <div className="Resume-experience--item">
-            <h4>Shift Manager | April 2019 - present</h4>
+            <h4>Shift Manager | April 2019 - Nov 2019</h4>
             <h4>Barista/Barista Trainer | July 2018 - April 2019</h4>
             <h4>Starbucks</h4>
               <ul>
