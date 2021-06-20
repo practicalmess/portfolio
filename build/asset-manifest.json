@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.90940dc7.css",
   "main.css.map": "static/css/main.90940dc7.css.map",
-  "main.js": "static/js/main.faaacacd.js",
-  "main.js.map": "static/js/main.faaacacd.js.map",
+  "main.js": "static/js/main.00ca0c2e.js",
+  "main.js.map": "static/js/main.00ca0c2e.js.map",
   "static/media/PHP-logo.svg": "static/media/PHP-logo.3a1af498.svg",
   "static/media/React-icon.svg": "static/media/React-icon.05a3e30f.svg",
   "static/media/bbscreenshot-sq.png": "static/media/bbscreenshot-sq.03697001.png",
@@ -20,6 +20,7 @@
   "static/media/linkedinlogo2.png": "static/media/linkedinlogo2.998f8545.png",
   "static/media/logo-proto.png": "static/media/logo-proto.399279cd.png",
   "static/media/ocean-background.png": "static/media/ocean-background.588a0c68.png",
+  "static/media/pdpscreenshot.png": "static/media/pdpscreenshot.57c3628c.png",
   "static/media/sass.svg": "static/media/sass.c2db7b2f.svg",
   "static/media/typescript_logo.svg": "static/media/typescript_logo.d5104695.svg"
 }
