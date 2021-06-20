@@ -60,7 +60,7 @@ a {
 .App-nav {
   padding-bottom: 1.2em;
   margin: 0;
-  background-color: #56848E;
+  background-color: rgba(227, 227, 231, 0.9);
 }
 @media screen and (max-width: 788px) {
   .App-nav {
@@ -76,9 +76,6 @@ a {
 .App-nav--hamburger {
   float: left;
   padding: 10px;
-  /* Rotate first bar */
-  /* Fade out the second bar */
-  /* Rotate last bar */
 }
 @media screen and (min-width: 789px) {
   .App-nav--hamburger {
@@ -189,6 +186,7 @@ a {
   background: rgba(255, 255, 255, 0.5);
   margin: 10% 15% 0 15%;
   padding: 1em;
+  border-radius: 10px;
 }
 @media screen and (max-width: 749px) {
   .Home-intro.copy-text {
