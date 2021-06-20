@@ -115,7 +115,7 @@ a {
   font-family: "Josefin Sans", sans-serif;
   font-weight: bold;
   cursor: pointer;
-  color: white;
+  color: #0f2f2f;
 }
 @media screen and (min-width: 789px) {
   .App-nav--wrapper li {
