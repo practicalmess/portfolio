@@ -99,7 +99,7 @@ a {
   &-nav {
     padding-bottom: 1.2em;
     margin: 0;
-    background-color: #56848E;
+    background-color: rgba(227, 227, 231, 0.9);
     @media screen and (max-width: $break-menu - 1) {
       padding-bottom: 0px;
     }
@@ -230,6 +230,7 @@ a {
     background: rgba(255, 255, 255, .5);
     margin: 10% 15% 0 15%;
     padding: 1em;
+    border-radius: 10px;
     @media screen and (max-width: $break-small) {
       margin: 0;
       width: 100%;
