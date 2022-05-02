@@ -1,12 +1,11 @@
 {
-  "main.css": "static/css/main.3f9f0651.css",
-  "main.css.map": "static/css/main.3f9f0651.css.map",
-  "main.js": "static/js/main.00ca0c2e.js",
-  "main.js.map": "static/js/main.00ca0c2e.js.map",
+  "main.css": "static/css/main.ca8bf30f.css",
+  "main.css.map": "static/css/main.ca8bf30f.css.map",
+  "main.js": "static/js/main.1530e890.js",
+  "main.js.map": "static/js/main.1530e890.js.map",
   "static/media/PHP-logo.svg": "static/media/PHP-logo.3a1af498.svg",
   "static/media/React-icon.svg": "static/media/React-icon.05a3e30f.svg",
   "static/media/bbscreenshot-sq.png": "static/media/bbscreenshot-sq.03697001.png",
-  "static/media/bwscreenshot.png": "static/media/bwscreenshot.9250e2b7.png",
   "static/media/fontawesome-webfont.eot": "static/media/fontawesome-webfont.674f50d2.eot",
   "static/media/fontawesome-webfont.svg?v=4.7.0": "static/media/fontawesome-webfont.912ec66d.svg",
   "static/media/fontawesome-webfont.ttf?v=4.7.0": "static/media/fontawesome-webfont.b06871f2.ttf",
@@ -21,6 +20,7 @@
   "static/media/logo-proto.png": "static/media/logo-proto.399279cd.png",
   "static/media/ocean-background.png": "static/media/ocean-background.588a0c68.png",
   "static/media/pdpscreenshot.png": "static/media/pdpscreenshot.57c3628c.png",
+  "static/media/pmrp-screenshot.png": "static/media/pmrp-screenshot.e135d7a2.png",
   "static/media/sass.svg": "static/media/sass.c2db7b2f.svg",
   "static/media/typescript_logo.svg": "static/media/typescript_logo.d5104695.svg"
 }
