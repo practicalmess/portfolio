@@ -25,7 +25,7 @@ const Resume = (props) => {
         <div className="Resume-experience">
           <h1 className="App-section--header">Work Experience</h1>
           <div className="Resume-experience--item">
-            <h4>Software Engineer | Oct 2016 - Oct 2017, Nov 2019 - present</h4>
+            <h4>Software Engineer | Oct 2016 - Oct 2017, Nov 2019 - Feb 2022</h4>
             <h4>Wayfair, LLC</h4>
               <ul>
                 <li>Maintaining the product details page of a major ecommerce site that serves hundreds of thousands of visitors per day</li>
