@@ -1,6 +1,6 @@
 //Variables
 $primary-color: #143341;
-$secondary-color: #76A79C;
+$secondary-color: #76a79c;
 
 $column-1: percentage(1/12);
 $column-2: 2 * $column-1;
@@ -27,8 +27,11 @@ $break-small: 749px;
 $break-menu: 789px;
 
 // Headers
-h1, h2, h3, h4 {
-  font-family: 'Josefin Sans', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Josefin Sans", sans-serif;
 }
 
 a {
@@ -76,7 +79,7 @@ a {
     margin: 1% auto 5% auto;
     min-width: 315px;
     p {
-      font-family: 'Alegreya Sans', sans-serif;
+      font-family: "Alegreya Sans", sans-serif;
       text-align: justify;
       text-align-last: left;
     }
@@ -115,28 +118,30 @@ a {
       }
       float: left;
       padding: 10px;
-      .bar1, .bar2, .bar3 {
+      .bar1,
+      .bar2,
+      .bar3 {
         width: 35px;
         height: 5px;
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
       }
-       // Rotate first bar 
+      // Rotate first bar
       .change.bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-        transform: rotate(-45deg) translate(-9px, 6px) ;
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
       }
 
-       // Fade out the second bar 
+      // Fade out the second bar
       .change.bar2 {
         opacity: 0;
       }
 
-       // Rotate last bar 
+      // Rotate last bar
       .change.bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-        transform: rotate(45deg) translate(-8px, -8px) ;
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
       }
     }
   }
@@ -152,7 +157,7 @@ a {
       display: inline-block;
     }
     li {
-      font-family: 'Josefin Sans', sans-serif;
+      font-family: "Josefin Sans", sans-serif;
       font-weight: bold;
       cursor: pointer;
       color: #0f2f2f;
@@ -185,22 +190,22 @@ a {
     top: 0;
   }
   &-footer {
-    font-family: 'Alegreya Sans', sans-serif;
+    font-family: "Alegreya Sans", sans-serif;
     text-align: center;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
-// Scrolling ocean background, fixed background image targeting the first element
-.element:first-of-type {
-  padding-top: 5%;
-  content: '';
-  background-image: url('../images/ocean-background.png');
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-attachment: fixed;
-}
+// // Scrolling ocean background, fixed background image targeting the first element
+// .element:first-of-type {
+//   padding-top: 5%;
+//   content: '';
+//   // background-image: url('../images/ocean-background.png');
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+//   background-attachment: fixed;
+// }
 
 // Home, the main section
 .Home {
@@ -213,7 +218,7 @@ a {
       width: 100%;
       max-width: 400px;
       display: inline;
-    }  
+    }
   }
 
   &-intro--wrapper {
@@ -227,7 +232,7 @@ a {
   }
 
   &-intro.copy-text {
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.5);
     margin: 10% 15% 0 15%;
     padding: 1em;
     border-radius: 10px;
@@ -270,12 +275,7 @@ a {
         width: 100px;
       }
     }
-    
-
   }
 }
 
-
 // Accessible styles go here
-
-

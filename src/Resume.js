@@ -53,7 +53,7 @@ const Resume = (props) => {
               </ul>
           </div>
           <div className="Resume-experience--item">
-            <h4>The Mothers' Milk Bank Northeast, Aug. 2013 - May 2014 | Office Assistant</h4>
+            <h4>The Mothers Milk Bank Northeast, Aug. 2013 - May 2014 | Office Assistant</h4>
               <ul>
                 <li>Managing record-keeping and administrative tasks for incoming milk donations</li>
                 <li>Maintaining computerized database of donors, donations, and sales</li>

@@ -1,4 +1,7 @@
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: "Josefin Sans", sans-serif;
 }
 
@@ -10,7 +13,6 @@ a {
   .hide {
     display: none;
   }
-
   .show {
     display: block;
   }
@@ -82,7 +84,9 @@ a {
     display: none;
   }
 }
-.App-nav--hamburger .bar1, .App-nav--hamburger .bar2, .App-nav--hamburger .bar3 {
+.App-nav--hamburger .bar1,
+.App-nav--hamburger .bar2,
+.App-nav--hamburger .bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -149,16 +153,6 @@ a {
   font-family: "Alegreya Sans", sans-serif;
   text-align: center;
   font-size: 0.9em;
-}
-
-.element:first-of-type {
-  padding-top: 5%;
-  content: "";
-  background-image: url("../images/ocean-background.png");
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-attachment: fixed;
 }
 
 @media screen and (min-width: 750px) {
