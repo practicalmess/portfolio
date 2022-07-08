@@ -6,44 +6,37 @@
  */
 
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
 import logo from "./images/logo-proto.png";
 import githublogo from "./images/ghlogo.png";
 import lilogo from "./images/linkedinlogo2.png";
 import Hero from "./Hero";
-import Home from "./Home";
-import About from "./About";
+// import Home from "./Home";
+// import About from "./About";
 // import Gallery from "./Gallery";
-import Resume from "./Resume";
-import Contact from "./Contact";
+// import Resume from "./Resume";
+// import Contact from "./Contact";
 import "./styles/App.css";
-import * as Scroll from "react-scroll";
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-} from "react-scroll";
-import { InView } from 'react-intersection-observer';
+// import * as Scroll from "react-scroll";
+import { Link, Events, scrollSpy } from "react-scroll";
+import { InView } from "react-intersection-observer";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
       menuOpen: false,
-      skin: "light",
+      theme: "light",
       heroInView: true,
     };
   }
 
   // Scroll component functions
   componentDidMount() {
-    Events.scrollEvent.register("begin", function (to, element) {
+    Events.scrollEvent.register("begin", function () {
       console.log("begin", arguments);
     });
 
-    Events.scrollEvent.register("end", function (to, element) {
+    Events.scrollEvent.register("end", function () {
       console.log("end", arguments);
     });
 
@@ -60,6 +53,8 @@ class App extends Component {
   }
 
   render() {
+    const date = new Date();
+    const year = date.getFullYear();
     return (
       <div className="App">
         <div className="App-header--wrapper">
@@ -130,26 +125,30 @@ class App extends Component {
                 </li>
               </ul>
             </div>
-            <div className="App-header--links">
-              <a href="https://github.com/practicalmess">
-                <img src={githublogo} alt="The circular logo for Github" />
-              </a>
-              <a href="https://www.linkedin.com/in/sidney-j-hackney/">
-                <img src={lilogo} alt="The circular logo for LinkedIn" />
-              </a>
-            </div>
+            {!this.state.heroInView && (
+              <div className="App-header--links">
+                <a href="https://github.com/practicalmess">
+                  <img src={githublogo} alt="The circular logo for Github" />
+                </a>
+                <a href="https://www.linkedin.com/in/sidney-j-hackney/">
+                  <img src={lilogo} alt="The circular logo for LinkedIn" />
+                </a>
+              </div>
+            )}
           </div>
         </div>
 
         <div className="App-body">
-          <InView as="div" onChange={(inView, entry) => this.setState({heroInView: inView})}>
-            <Hero heroInView={heroInView} />
-          </div>
-          <InView />
+          <InView
+            as="div"
+            onChange={(inView) => this.setState({ heroInView: inView })}
+          >
+            <Hero heroInView={this.state.heroInView} />
+          </InView>
         </div>
 
         <div className="App-footer">
-          <span>Copyright &copy; 2021 Sidney Hackney</span>
+          <span>Copyright &copy; {year} Sidney Hackney</span>
         </div>
       </div>
     );

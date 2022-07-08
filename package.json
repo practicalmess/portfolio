@@ -19,6 +19,9 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "eslint": "^8.19.0",
+    "eslint-plugin-react": "^7.30.1",
+    "prettier": "2.7.1",
     "sass": "^1.16.1"
   },
   "browserslist": {
