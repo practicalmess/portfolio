@@ -15,7 +15,7 @@ import Hero from "./Hero";
 // import Gallery from "./Gallery";
 // import Resume from "./Resume";
 // import Contact from "./Contact";
-import "./styles/App.css";
+import "./processed-styles/App.css";
 // import * as Scroll from "react-scroll";
 import { Link, Events, scrollSpy } from "react-scroll";
 import { InView } from "react-intersection-observer";
@@ -57,6 +57,8 @@ class App extends Component {
     const year = date.getFullYear();
     return (
       <div className="App">
+        <div className="background orange"></div>
+        <div className="background blue"></div>
         <div className="App-header--wrapper">
           <div className="App-nav">
             <div

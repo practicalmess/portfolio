@@ -1,12 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&family=Quattrocento:wght@700&display=swap");
 h1,
 h2,
 h3,
 h4 {
-  font-family: "Josefin Sans", sans-serif;
+  font-family: "Quattrocento", serif;
+}
+
+h1 {
+  color: #bd4101;
+}
+
+h2 {
+  color: #04587e;
 }
 
 a {
   text-decoration: none;
+}
+
+.background:before {
+  background-image: url("/images/coral-simple.svg");
+  background-repeat: no-repeat;
+  content: " ";
+  position: absolute;
+  transform: rotate(-65deg);
+  height: 100%;
+  width: 200vw;
+  z-index: -1;
+}
+
+.orange:before {
+  filter: invert(68%) sepia(32%) saturate(7058%) hue-rotate(1deg) brightness(98%) contrast(97%) opacity(30%);
+  left: -40vw;
+  top: 40vh;
+}
+
+.blue:before {
+  filter: invert(72%) sepia(79%) saturate(1822%) hue-rotate(133deg) brightness(96%) contrast(97%);
+  left: -35vw;
+  top: 42vh;
 }
 
 @media screen and (max-width: 614px) {
@@ -33,8 +66,8 @@ a {
   float: left;
 }
 .App-body {
+  font-family: "Comfortaa", cursive;
   padding: 1px 0;
-  background-image: url("/images/coral-curls-simple.svg");
 }
 .App-section {
   overflow: auto;
@@ -63,7 +96,7 @@ a {
 .App-nav {
   padding-bottom: 1.2em;
   margin: 0;
-  background-color: rgba(227, 227, 231, 0.9);
+  background-color: rgba(0, 223, 245, 0.3215686275);
 }
 @media screen and (max-width: 614px) {
   .App-nav {
@@ -111,7 +144,7 @@ a {
 }
 @media screen and (min-width: 615px) {
   .App-nav--wrapper {
-    width: 66.6666666667%;
+    width: 100%;
     padding: 0;
     display: inline-block;
   }
