@@ -1,12 +1,12 @@
 .Hero {
   padding-top: 15%;
-  min-height: 350px;
   display: flex;
   flex-direction: column-reverse;
 }
 .Hero-top {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
 }
 .Hero-top img {
   width: 50px;

@@ -5,12 +5,11 @@
  * Sid Hackney 2019
  */
 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Link, Element , Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import React from 'react';
+import { Element } from 'react-scroll';
 import './styles/App.css';
 
-const About = (props) => {
+const About = () => {
 
   return (
     <Element name="about" className="element">
