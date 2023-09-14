@@ -8,6 +8,8 @@
 import React from 'react';
 import { Element } from 'react-scroll';
 import '../processed-styles/App.css';
+import beatbox from './../images/screenshot-bb.png';
+import pmrp from './../images/screenshot-pmrp.png';
 
 class Project {
   imgSrc: string;
@@ -20,10 +22,20 @@ interface ProjectCardProps {
 }
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
-  console.log(project.imgSrc);
+  let src = '';
+  switch (project.imgSrc) {
+    case 'pmrp':
+      src = pmrp;
+      break;
+    case 'bb':
+      src = beatbox;
+      break;
+    default:
+      src = '';
+  }
   return (
     <div className="Card-wrapper">
-      <img src={project.imgSrc} alt={project.imgAltText} />
+      <img src={src} alt={project.imgAltText} />
       <div className="Card-caption">{project.caption}</div>
     </div>
   );
@@ -52,7 +64,7 @@ const Gallery = (props: GalleryProps) => {
   return (
     <Element name="Gallery" className="element">
       <div className="App-section">
-        <h1>Past Work</h1>
+        <h1>Projects</h1>
         <div className="Gallery-wrapper">
           {props.projects.map((project, index) => (
             <div key={index}>

@@ -10,6 +10,7 @@ import React, { useState } from 'react';
 import Hero from './components/Hero';
 import Nav from './components/Nav.tsx';
 import Gallery from './components/Gallery.tsx';
+import Projects from './components/Projects';
 import galleryData from './data/galleryData.json';
 import './processed-styles/App.css';
 
@@ -29,6 +30,7 @@ const App = () => {
       <div className="App-body">
         <Hero />
         <Gallery projects={Object.values(galleryData.galleryData)} />
+        <Projects />
       </div>
 
       <div className="App-footer">

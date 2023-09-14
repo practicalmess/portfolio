@@ -237,6 +237,12 @@ a {
   display: inline-block;
 }
 
+.Gallery-wrapper .Card-wrapper img {
+  width: 200px;
+  border-radius: 8px;
+  border: 8px solid #04587e;
+}
+
 .Resume-skills--item ul {
   list-style-type: none;
   padding: 0;
