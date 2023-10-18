@@ -1,8 +1,12 @@
 //Variables
-$primary-color: #143341;
-$secondary-color: #76A79C;
+$deep-blue: #04587e;
+$light-blue: #00dff552;
+$deep-red: #bd4101;
+$light-orange: #ffd9af;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quattrocento:wght@700&display=swap');
 
-$column-1: percentage(1/12);
+$column-1: percentage(calc(1 / 12));
 $column-2: 2 * $column-1;
 $column-3: 3 * $column-1;
 $column-4: 4 * $column-1;
@@ -16,27 +20,64 @@ $column-11: 11 * $column-1;
 $column-12: 12 * $column-1;
 $logo-height: 60px;
 // $logo-height: $column-1;
-$logo-height-third: $logo-height / 3;
+$logo-height-third: calc($logo-height/3);
 
 $font-size-copy: 13px;
 $font-size-bigger: 24px;
 
 $portrait-height: 470px;
 
+$break-xsmal: 500px;
 $break-small: 749px;
-$break-menu: 789px;
+$break-menu: 615px;
 
 // Headers
-h1, h2, h3, h4 {
-  font-family: 'Josefin Sans', sans-serif;
+h1,
+h2,
+h3,
+h4 {
+  font-family: 'Quattrocento', serif;
+}
+
+h1 {
+  color: $deep-red;
+}
+
+h2 {
+  color: $deep-blue;
 }
 
 a {
   text-decoration: none;
 }
+.background:before {
+  background-image: url('/images/coral-simple.svg');
+  background-repeat: no-repeat;
+  content: ' ';
+  position: absolute;
+  transform: rotate(-65deg);
+  height: 100%;
+  width: 200vw;
+
+  z-index: -1;
+}
+
+.orange:before {
+  filter: invert(68%) sepia(32%) saturate(7058%) hue-rotate(1deg)
+    brightness(98%) contrast(97%) opacity(30%);
+  left: -40vw;
+  top: 40vh;
+}
+
+.blue:before {
+  filter: invert(72%) sepia(79%) saturate(1822%) hue-rotate(133deg)
+    brightness(96%) contrast(97%);
+  left: -35vw;
+  top: 42vh;
+}
 
 // Classes applied under menu breakpoint to show and hide mobile menu
-@media screen and (max-width: $break-menu - 1) {
+@media screen and (max-width: ($break-menu - 1)) {
   .hide {
     display: none;
   }
@@ -67,13 +108,13 @@ a {
 
   // Main body
   &-body {
-    padding: 1px 0;
+    font-family: 'Comfortaa', cursive;
+    padding: 8px;
   }
   &-section {
-    overflow: auto;
     padding: 10px;
-    width: $column-10;
-    margin: 1% auto 5% auto;
+    width: $column-11;
+    // margin: 1% auto 5% auto;
     min-width: 315px;
     p {
       font-family: 'Alegreya Sans', sans-serif;
@@ -82,7 +123,7 @@ a {
     }
     // Create visual break between sections, not including the first one directly beneath the header
     &:not(:first-child):after {
-      content: "";
+      content: '';
       border-bottom: 1px black solid;
       width: 60%;
       padding-top: 10%;
@@ -99,12 +140,13 @@ a {
   &-nav {
     padding-bottom: 1.2em;
     margin: 0;
-    background-color: rgba(227, 227, 231, 0.9);
-    @media screen and (max-width: $break-menu - 1) {
+    background-color: rgba(0, 223, 245, 0.5);
+    // opacity: 0.5;
+    @media screen and (max-width: ($break-menu - 1)) {
       padding-bottom: 0px;
     }
     &:after {
-      content: "";
+      content: '';
       width: 100%;
       clear: both;
       display: block;
@@ -115,28 +157,30 @@ a {
       }
       float: left;
       padding: 10px;
-      .bar1, .bar2, .bar3 {
+      .bar1,
+      .bar2,
+      .bar3 {
         width: 35px;
         height: 5px;
         background-color: #333;
         margin: 6px 0;
         transition: 0.4s;
       }
-       // Rotate first bar 
+      // Rotate first bar
       .change.bar1 {
-        -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
-        transform: rotate(-45deg) translate(-9px, 6px) ;
+        -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+        transform: rotate(-45deg) translate(-9px, 6px);
       }
 
-       // Fade out the second bar 
+      // Fade out the second bar
       .change.bar2 {
         opacity: 0;
       }
 
-       // Rotate last bar 
+      // Rotate last bar
       .change.bar3 {
-        -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
-        transform: rotate(45deg) translate(-8px, -8px) ;
+        -webkit-transform: rotate(45deg) translate(-8px, -8px);
+        transform: rotate(45deg) translate(-8px, -8px);
       }
     }
   }
@@ -144,9 +188,8 @@ a {
   &-nav--wrapper {
     list-style-type: none;
     margin: 0 $logo-height;
-    // width: $column-8;
     @media screen and (min-width: $break-menu) {
-      width: $column-8;
+      width: $column-12;
       // margin: 0 0 0 0;
       padding: 0;
       display: inline-block;
@@ -165,7 +208,7 @@ a {
         border-radius: 5px;
         margin: $logo-height-third 1% 0 1%;
       }
-      @media screen and (max-width: $break-menu - 1) {
+      @media screen and (max-width: ($break-menu - 1)) {
         width: 100%;
         float: left;
         font-size: $font-size-bigger;
@@ -187,25 +230,25 @@ a {
   &-footer {
     font-family: 'Alegreya Sans', sans-serif;
     text-align: center;
-    font-size: .9em;
+    font-size: 0.9em;
   }
 }
 
-// Scrolling ocean background, fixed background image targeting the first element
-.element:first-of-type {
-  padding-top: 5%;
-  content: '';
-  background-image: url('../images/ocean-background.png');
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-  background-attachment: fixed;
-}
+// // Scrolling ocean background, fixed background image targeting the first element
+// .element:first-of-type {
+//   padding-top: 5%;
+//   content: '';
+//   // background-image: url('../images/ocean-background.png');
+//   width: 100%;
+//   height: 100%;
+//   z-index: -1;
+//   background-attachment: fixed;
+// }
 
 // Home, the main section
 .Home {
   &-portrait--wrapper {
-    @media screen and (min-width: $break-small + 1) {
+    @media screen and (min-width: ($break-small + 1)) {
       float: left;
       width: 48%;
     }
@@ -213,7 +256,7 @@ a {
       width: 100%;
       max-width: 400px;
       display: inline;
-    }  
+    }
   }
 
   &-intro--wrapper {
@@ -227,7 +270,7 @@ a {
   }
 
   &-intro.copy-text {
-    background: rgba(255, 255, 255, .5);
+    background: rgba(255, 255, 255, 0.5);
     margin: 10% 15% 0 15%;
     padding: 1em;
     border-radius: 10px;
@@ -241,6 +284,7 @@ a {
 // Styles for the project sections
 .Project {
   &-card {
+    font-size: 18px;
     img {
       width: 100%;
     }
@@ -250,9 +294,90 @@ a {
       padding-right: 1%;
     }
     &:after {
-      content: "";
+      content: '';
       width: 100%;
       display: inline-block;
+    }
+  }
+}
+
+.Gallery-wrapper {
+  @media screen and (min-width: $break-small) {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .Card-wrapper {
+    background-color: $light-orange;
+    padding: 12px;
+    border-radius: 8px;
+    position: relative;
+    width: 200px;
+    // height: 200px;
+    img {
+      width: 200px;
+      border-radius: 8px;
+    }
+    .Card-caption {
+      display: none;
+    }
+    .Card-overlay {
+      display: none;
+    }
+    @media screen and (min-width: $break-small) {
+      &:hover {
+        img {
+          position: absolute;
+        }
+        .Card-overlay {
+          display: inline-block;
+          position: relative;
+          z-index: 100;
+          width: 224px;
+          height: 224px;
+          margin: -12px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 8px;
+          cursor: pointer;
+          span {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $break-small) {
+      .Card-caption {
+        display: block;
+      }
+      width: 100%;
+      margin: 16px 0;
+      background-color: white;
+      border: 2px solid $light-orange;
+    }
+    &.modal {
+      padding: 24px;
+      position: absolute;
+      width: 80%;
+      left: 0;
+      margin: 0 10%;
+      display: flex;
+      z-index: 1000;
+      background-color: white;
+      border: 2px solid $light-orange;
+      img {
+        position: relative;
+      }
+      .Card-overlay {
+        display: none;
+      }
+      .Card-caption {
+        display: block;
+        padding: 16px;
+      }
     }
   }
 }
@@ -270,12 +395,7 @@ a {
         width: 100px;
       }
     }
-    
-
   }
 }
 
-
 // Accessible styles go here
-
-
