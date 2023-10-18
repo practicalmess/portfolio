@@ -18,7 +18,7 @@ const Projects = () => {
         <h1>Professional Work</h1>
         <div className="Project-card">
           <div className="Project-card--column1">
-            <a href="https://www.wayfair.com/furniture/pdp/loon-peak-urbana-1-drawer-iron-nightstand-w002783661.html">
+            <a href="https://paidleave.mass.gov/">
               <img
                 src={pfml}
                 alt="A screenshot of the Wayfair product details page."
@@ -26,7 +26,7 @@ const Projects = () => {
             </a>
           </div>
           <div className="Project-card--column2">
-            <a href="https://www.wayfair.com/furniture/pdp/loon-peak-urbana-1-drawer-iron-nightstand-w002783661.html">
+            <a href="https://paidleave.mass.gov/">
               <h2>MA Paid Family and Medical Leave</h2>
             </a>
             <p>
