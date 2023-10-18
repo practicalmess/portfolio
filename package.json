@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@types/jest": "^29.5.3",
     "@types/node": "^20.4.5",
@@ -13,11 +13,16 @@
     "react-dom": "^18.2.0",
     "react-intersection-observer": "^9.3.3",
     "react-scripts": "5.0.1",
+    "gh-pages": "^6.0.0",
+    "react-reveal": "^1.2.2",
     "react-scroll": "^1.7.10",
     "react-scroll-to": "^2.0.0-alpha.1",
     "typescript": "^4.9.5"
   },
+  "homepage": "https://practicalmess.github.io/portfolio",
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
