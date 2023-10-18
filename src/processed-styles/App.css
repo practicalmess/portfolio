@@ -67,13 +67,11 @@ a {
 }
 .App-body {
   font-family: "Comfortaa", cursive;
-  padding: 1px 0;
+  padding: 8px;
 }
 .App-section {
-  overflow: auto;
   padding: 10px;
-  width: 83.3333333333%;
-  margin: 1% auto 5% auto;
+  width: 91.6666666667%;
   min-width: 315px;
 }
 .App-section p {
@@ -96,7 +94,7 @@ a {
 .App-nav {
   padding-bottom: 1.2em;
   margin: 0;
-  background-color: rgba(0, 223, 245, 0.3215686275);
+  background-color: rgba(0, 223, 245, 0.5);
 }
 @media screen and (max-width: 614px) {
   .App-nav {
@@ -223,6 +221,9 @@ a {
   }
 }
 
+.Project-card {
+  font-size: 18px;
+}
 .Project-card img {
   width: 100%;
 }
@@ -237,10 +238,83 @@ a {
   display: inline-block;
 }
 
+@media screen and (min-width: 749px) {
+  .Gallery-wrapper {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+.Gallery-wrapper .Card-wrapper {
+  background-color: #ffd9af;
+  padding: 12px;
+  border-radius: 8px;
+  position: relative;
+  width: 200px;
+}
 .Gallery-wrapper .Card-wrapper img {
   width: 200px;
   border-radius: 8px;
-  border: 8px solid #04587e;
+}
+.Gallery-wrapper .Card-wrapper .Card-caption {
+  display: none;
+}
+.Gallery-wrapper .Card-wrapper .Card-overlay {
+  display: none;
+}
+@media screen and (min-width: 749px) {
+  .Gallery-wrapper .Card-wrapper:hover img {
+    position: absolute;
+  }
+  .Gallery-wrapper .Card-wrapper:hover .Card-overlay {
+    display: inline-block;
+    position: relative;
+    z-index: 100;
+    width: 224px;
+    height: 224px;
+    margin: -12px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  .Gallery-wrapper .Card-wrapper:hover .Card-overlay span {
+    position: absolute;
+    bottom: 16px;
+    left: 16px;
+    font-weight: bold;
+  }
+}
+@media screen and (max-width: 749px) {
+  .Gallery-wrapper .Card-wrapper {
+    width: 100%;
+    margin: 16px 0;
+    background-color: white;
+    border: 2px solid #ffd9af;
+  }
+  .Gallery-wrapper .Card-wrapper .Card-caption {
+    display: block;
+  }
+}
+.Gallery-wrapper .Card-wrapper.modal {
+  padding: 24px;
+  position: absolute;
+  width: 80%;
+  left: 0;
+  margin: 0 10%;
+  display: flex;
+  z-index: 1000;
+  background-color: white;
+  border: 2px solid #ffd9af;
+}
+.Gallery-wrapper .Card-wrapper.modal img {
+  position: relative;
+}
+.Gallery-wrapper .Card-wrapper.modal .Card-overlay {
+  display: none;
+}
+.Gallery-wrapper .Card-wrapper.modal .Card-caption {
+  display: block;
+  padding: 16px;
 }
 
 .Resume-skills--item ul {

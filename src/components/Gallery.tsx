@@ -5,7 +5,7 @@
  * Sid Hackney 2019
  */
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Element } from 'react-scroll';
 import '../processed-styles/App.css';
 import beatbox from './../images/screenshot-bb.png';
@@ -15,6 +15,7 @@ class Project {
   imgSrc: string;
   imgAltText: string;
   caption: string;
+  title: string;
 }
 
 interface ProjectCardProps {
@@ -33,36 +34,30 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
     default:
       src = '';
   }
+  const [modalOpen, setModalOpen] = useState(false);
+  const toggleModal = () => {
+    setModalOpen(!modalOpen);
+  };
+  const classNames = modalOpen ? 'modal' : '';
   return (
-    <div className="Card-wrapper">
+    <div className={`Card-wrapper ${classNames}`} onClick={toggleModal}>
       <img src={src} alt={project.imgAltText} />
+      <div className="Card-overlay">
+        <span>Read more...</span>
+      </div>
       <div className="Card-caption">{project.caption}</div>
+      {modalOpen && <span onClick={toggleModal}>X</span>}
     </div>
   );
 };
-// const ProjectPreview = (props) => {
-//   const { projectName, projectDesc, projectImg, projectSrc } = props;
-//   return (
-//     <div className="Modal">
-//       <h1>{projectName}</h1>
-//       <img src={props.imgSrc} alt={props.imgAltText} />
-//       <p>{projectDesc}</p>
-//       <div className="Links">
-//         <button>View Live</button>
-//         <button className={!!projectSrc ? "" : "noSource"}>Source Code</button>
-//       </div>
-//     </div>
-//   );
-// };
 
 interface GalleryProps {
   projects: Project[];
 }
 
 const Gallery = (props: GalleryProps) => {
-  console.log(props.projects);
   return (
-    <Element name="Gallery" className="element">
+    <Element name="projects" className="element">
       <div className="App-section">
         <h1>Projects</h1>
         <div className="Gallery-wrapper">
@@ -78,3 +73,18 @@ const Gallery = (props: GalleryProps) => {
 };
 
 export default Gallery;
+
+// const ProjectPreview = (props) => {
+//   const { projectName, projectDesc, projectImg, projectSrc } = props;
+//   return (
+//     <div className="Modal">
+//       <h1>{projectName}</h1>
+//       <img src={props.imgSrc} alt={props.imgAltText} />
+//       <p>{projectDesc}</p>
+//       <div className="Links">
+//         <button>View Live</button>
+//         <button className={!!projectSrc ? "" : "noSource"}>Source Code</button>
+//       </div>
+//     </div>
+//   );
+// };

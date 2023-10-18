@@ -2,6 +2,7 @@
 $deep-blue: #04587e;
 $light-blue: #00dff552;
 $deep-red: #bd4101;
+$light-orange: #ffd9af;
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&family=Quattrocento:wght@700&display=swap');
 
@@ -26,6 +27,7 @@ $font-size-bigger: 24px;
 
 $portrait-height: 470px;
 
+$break-xsmal: 500px;
 $break-small: 749px;
 $break-menu: 615px;
 
@@ -107,13 +109,12 @@ a {
   // Main body
   &-body {
     font-family: 'Comfortaa', cursive;
-    padding: 1px 0;
+    padding: 8px;
   }
   &-section {
-    overflow: auto;
     padding: 10px;
-    width: $column-10;
-    margin: 1% auto 5% auto;
+    width: $column-11;
+    // margin: 1% auto 5% auto;
     min-width: 315px;
     p {
       font-family: 'Alegreya Sans', sans-serif;
@@ -139,7 +140,7 @@ a {
   &-nav {
     padding-bottom: 1.2em;
     margin: 0;
-    background-color: $light-blue;
+    background-color: rgba(0, 223, 245, 0.5);
     // opacity: 0.5;
     @media screen and (max-width: ($break-menu - 1)) {
       padding-bottom: 0px;
@@ -283,6 +284,7 @@ a {
 // Styles for the project sections
 .Project {
   &-card {
+    font-size: 18px;
     img {
       width: 100%;
     }
@@ -300,11 +302,82 @@ a {
 }
 
 .Gallery-wrapper {
+  @media screen and (min-width: $break-small) {
+    display: flex;
+    justify-content: space-around;
+  }
+
   .Card-wrapper {
+    background-color: $light-orange;
+    padding: 12px;
+    border-radius: 8px;
+    position: relative;
+    width: 200px;
+    // height: 200px;
     img {
       width: 200px;
       border-radius: 8px;
-      border: 8px solid $deep-blue;
+    }
+    .Card-caption {
+      display: none;
+    }
+    .Card-overlay {
+      display: none;
+    }
+    @media screen and (min-width: $break-small) {
+      &:hover {
+        img {
+          position: absolute;
+        }
+        .Card-overlay {
+          display: inline-block;
+          position: relative;
+          z-index: 100;
+          width: 224px;
+          height: 224px;
+          margin: -12px;
+          color: white;
+          background-color: rgba(0, 0, 0, 0.5);
+          border-radius: 8px;
+          cursor: pointer;
+          span {
+            position: absolute;
+            bottom: 16px;
+            left: 16px;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+    @media screen and (max-width: $break-small) {
+      .Card-caption {
+        display: block;
+      }
+      width: 100%;
+      margin: 16px 0;
+      background-color: white;
+      border: 2px solid $light-orange;
+    }
+    &.modal {
+      padding: 24px;
+      position: absolute;
+      width: 80%;
+      left: 0;
+      margin: 0 10%;
+      display: flex;
+      z-index: 1000;
+      background-color: white;
+      border: 2px solid $light-orange;
+      img {
+        position: relative;
+      }
+      .Card-overlay {
+        display: none;
+      }
+      .Card-caption {
+        display: block;
+        padding: 16px;
+      }
     }
   }
 }
