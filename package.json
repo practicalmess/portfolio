@@ -2,7 +2,7 @@
   "name": "portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://shackney.com",
+  "homepage": "https://shackney.com/",
   "dependencies": {
     "gh-pages": "^6.0.0",
     "npm": "^6.4.1",
