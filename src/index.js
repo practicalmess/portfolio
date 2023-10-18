@@ -4,11 +4,13 @@ import "./index.css";
 import App from "./App";
 // import Home from 'Home.js';
 import registerServiceWorker from "./registerServiceWorker";
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(
-  <React.StrictMode>
+import { HashRouter } from "react-router-dom";
+
+ReactDOM.render(
+  <HashRouter>
     <App />
-  </React.StrictMode>
+  </HashRouter>,
+  document.getElementById("root")
 );
 
 // ReactDOM.render(<App />, document.getElementById('root'));
