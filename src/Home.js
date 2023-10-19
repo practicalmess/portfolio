@@ -5,19 +5,11 @@
  * Sid Hackney 2019
  */
 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import {
-  Link,
-  Element,
-  Events,
-  animateScroll as scroll,
-  scrollSpy,
-  scroller,
-} from 'react-scroll';
+import React from 'react';
+import { Element } from 'react-scroll';
 import './styles/App.css';
 
-const Home = (props) => {
+const Home = () => {
   return (
     <Element name="home" className="element">
       <div className="App-section">
