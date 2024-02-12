@@ -29,8 +29,8 @@ const App = () => {
 
       <div className="App-body">
         <Hero />
-        <Gallery projects={Object.values(galleryData.galleryData)} />
         <Projects />
+        <Gallery projects={Object.values(galleryData.galleryData)} />
       </div>
 
       <div className="App-footer">

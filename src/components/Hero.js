@@ -20,8 +20,11 @@ const Hero = () => {
       </div>
       <h2>Beautiful, modern websites for all</h2>
       <p>
-        I am a full stack software engineer with a special interest in user
-        focused, accessible front-end web development.
+        Experienced Full Stack Developer recognized for bridging communication
+        gaps across disciplines and swiftly learning new languages and systems.
+        Proficient in JavaScript/TypeScript, React.js, and AWS, with a track
+        record of streamlining processes and delivering impactful frontend
+        solutions.
       </p>
       <span className="Hero-intro copy-text">
         I pride myself on my ability to quickly become familiar with systems and
@@ -29,7 +32,8 @@ const Hero = () => {
         particular is a career where constant learning is not only encouraged
         but largely inevitable. I am excited to use my skills to work on a wide
         variety of meaningful projects in the future as my knowledge and
-        experience expand.
+        experience expand. Let&apos;s talk about how my knowledge and experience
+        can serve your needs.
       </span>
     </Element>
   );

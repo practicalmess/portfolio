@@ -41,6 +41,17 @@ const Nav = ({ isOpen, toggleMenu }: NavProps) => {
           <li className="App-nav--item">
             <Link
               activeClass="active"
+              to="resume"
+              smooth={true}
+              offset={-70}
+              duration={500}
+            >
+              EXPERIENCE
+            </Link>
+          </li>
+          <li className="App-nav--item">
+            <Link
+              activeClass="active"
               to="projects"
               smooth={true}
               offset={-70}
@@ -49,17 +60,17 @@ const Nav = ({ isOpen, toggleMenu }: NavProps) => {
               PROJECTS
             </Link>
           </li>
-          {/* <li className="App-nav--item">
+          <li className="App-nav--item">
             <Link
               activeClass="active"
-              to="resume"
+              to="contact"
               smooth={true}
               offset={-70}
               duration={500}
             >
-              RESUME
+              CONTACT
             </Link>
-          </li> */}
+          </li>
         </ul>
       </div>
       <div className="App-header--links">
