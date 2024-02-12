@@ -1,21 +1,22 @@
 {
   "files": {
-    "main.css": "https://shackney.com/static/css/main.8f98ef3d.css",
-    "main.js": "https://shackney.com/static/js/main.d7e56d8c.js",
+    "main.css": "https://shackney.com/static/css/main.031c5937.css",
+    "main.js": "https://shackney.com/static/js/main.9a4f043d.js",
     "static/media/screenshot-pmrp.png": "https://shackney.com/static/media/screenshot-pmrp.f7d12ce359ea53b864e6.png",
     "static/media/screenshot-bb.png": "https://shackney.com/static/media/screenshot-bb.a47c466a31b717f73024.png",
     "static/media/screenshot-pfml.png": "https://shackney.com/static/media/screenshot-pfml.e80d83eaafb45f443ce2.png",
+    "static/media/screenshot-manage-cats.png": "https://shackney.com/static/media/screenshot-manage-cats.4c0f56152c5669b0d2b5.png",
     "static/media/screenshot-pdp.png": "https://shackney.com/static/media/screenshot-pdp.134211d48e2f4947de16.png",
     "static/media/logo-proto.png": "https://shackney.com/static/media/logo-proto.83aae4003c4531e71a46.png",
     "static/media/ghlogo.png": "https://shackney.com/static/media/ghlogo.ea1ae41488db6ab77da0.png",
     "static/media/linkedinlogo2.png": "https://shackney.com/static/media/linkedinlogo2.ab7ac9f9aff7469eda5c.png",
     "index.html": "https://shackney.com/index.html",
     "static/media/coral-simple.svg": "https://shackney.com/static/media/coral-simple.167c7f18450b05aa434a.svg",
-    "main.8f98ef3d.css.map": "https://shackney.com/static/css/main.8f98ef3d.css.map",
-    "main.d7e56d8c.js.map": "https://shackney.com/static/js/main.d7e56d8c.js.map"
+    "main.031c5937.css.map": "https://shackney.com/static/css/main.031c5937.css.map",
+    "main.9a4f043d.js.map": "https://shackney.com/static/js/main.9a4f043d.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f98ef3d.css",
-    "static/js/main.d7e56d8c.js"
+    "static/css/main.031c5937.css",
+    "static/js/main.9a4f043d.js"
   ]
 }
